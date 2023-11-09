@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    background: grey;
+    height: 100vh;
+}
+
+.container{
+    border-radius: 25px;
+    padding: 5em;
+    background: #26282A;
+    color: #fff;
+    box-shadow:  0 5px 5px black;
+    
+}
+
+.dot{
+    width: 8px;
+    height: 8px;
+    background: rgb(228, 107, 244);
+    position: absolute;
+    z-index: 1;
+    border: 8px solid #26282A;
+    border-radius: 25px;
+    top: -6px;
+    left: -7px;
+}
+
+img {
+    width: 6em;
+    height: 6em;
+    object-fit: cover;
+    border-radius: 0px 25px 25px 25px;
+    position: relative;
+  }
+  
+  
+  
+
+.profile{
+    display: flex;
+    gap: 1em;
+    position: relative;
+}
+
+
+
+h1{
+    font-size: 1.5em;
+}
+
+p{
+    color: grey;
+    font-weight: 600;
+}
+
+button{
+    margin-top: 1rem;
+}
+
+
+button:nth-child(2){
+    padding: .85em 1.55em;
+    border-radius: 0px 15px 15px 0px ;
+    color: #26282A;
+    background: #F6705E;
+    border: .5px solid #F6705E;
+}
+
+button:nth-child(1){
+    padding: .85em 1.55em;
+    border-radius: 15px 0px 0px 15px ;
+    color: #fff;
+    background: #26282A;
+    border: .5px solid #F6705E;
+}
+
+button:hover{
+    background: #f9e9e78d;
+    border: .5px solid #ffffff;
+    cursor: pointer;
+    transition: all 250ms;
+}
+
+
+
+hr{
+    margin: 2rem 0;
+    color: #ffffff2a;
+    border: .6px  solid #52525258;
+}
+
+
+.two{
+    position: relative;
+}
+
+.three{
+    position: relative;
+}
+
+
+.dot_2{
+    width: 8px;
+    height: 8px;
+    background: rgb(107, 244, 150);
+    position: absolute;
+    z-index: 1;
+    border: 8px solid #26282A;
+    border-radius: 25px;
+    top: -6px;
+    left: -7px;
+}
+
+.dot_3{
+    width: 8px;
+    height: 8px;
+    background: rgb(244, 182, 107);
+    position: absolute;
+    z-index: 1;
+    border: 8px solid #26282A;
+    border-radius: 25px;
+    top: -6px;
+    left: -7px;
+}
