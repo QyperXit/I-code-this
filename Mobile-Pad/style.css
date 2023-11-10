@@ -1,0 +1,273 @@
+/* Add CSS here */
+:root {
+    --clr-primario: black;
+    --clr-secundario: hsla(0, 0%, 0%, .3);
+    --clr-ternario: hsla(0, 0%, 0%, .4);
+    --clr-accent: hsl(52, 56%, 43%);
+    --clr-bg: hsla(158, 72%, 46%, 1);
+    --clr-bg-pad: white;
+    --clr-box-shadow: hsla(0, 0%, 0%, .2);
+    --clr-box-shadow-phone-button: rgb(168, 111, 42);
+    --ff-primaria: 'Poppins', sans-serif;
+    --ff-secundaria: 'Oswald', sans-serif;
+    --fs-primaria: 1rem;
+}
+
+/* Estilos Reset */
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-primaria);
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    line-height: 1.5;
+}
+
+img,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    appearance: none;
+    font: inherit;
+}
+
+::-webkit-scrollbar {
+    height: 4px;
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--clr-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--clr-bg-table-header);
+    cursor: pointer;
+}
+
+/* utility classes */
+
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.pointer-events-none {
+    pointer-events: none;
+}
+
+
+/* Estilos principales */
+body {
+    position: relative;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--clr-bg);
+    color: var(--clr-primario);
+    font-size: var(--fs-primaria);
+    font-weight: 400;
+    user-select: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: clamp(18rem, 100vw, 24rem);
+    margin-inline: auto;
+    padding-block-start: 4rem;
+    padding-block-end: 2rem;
+    padding-inline: 2rem;
+    background-color: var(--clr-bg-pad);
+    border-radius: .2rem;
+}
+
+.pad-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.pad-header p {
+    height: 3rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.pad-header span {
+    margin-block-start: -1.2rem;
+    font-size: 1.3rem;
+    color: var(--clr-secundario);
+}
+
+.pad-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1rem;
+    row-gap: 1.6rem;
+    margin-block-start: 2.5rem;
+}
+
+.pad-body-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 0;
+    width: 5rem;
+    aspect-ratio: 1;
+    border: 1px solid var(--clr-accent);
+    border-radius: 50%;
+    cursor: pointer;
+    will-change: bov-shadow;
+    transition: box-shadow .150s ease-in-out;
+}
+
+.pad-body-item:hover {
+    box-shadow: 0px 0px 10px var(--clr-box-shadow-phone-button);
+}
+
+.pad-body-item:hover .digit,
+.pad-body-item:hover .letter {
+    color: var(--clr-accent);
+}
+
+.digit {
+    margin-block-start: 1.6rem;
+    font-size: 1.4rem;
+    line-height: .6;
+    will-change: color;
+    transition: color .150s ease-in-out;
+}
+
+.letter {
+    margin-block-start: .2rem;
+    font-size: .8rem;
+    text-transform: uppercase;
+    will-change: color;
+    transition: color .150s ease-in-out;
+}
+
+.svg-item {
+    display: grid;
+    place-content: center;
+    border: none;
+}
+
+.svg-item svg {
+    width: 2.8rem;
+    stroke: var(--clr-ternario);
+    will-change: stroke;
+    transition: stroke .250s ease-in-out;
+}
+
+.svg-item:hover svg {
+    stroke: var(--clr-accent);
+}
+
+.digit-center {
+    display: grid;
+    place-content: center;
+    line-height: 1.5;
+}
+
+.digit-center .digit {
+    margin-block-start: 0;
+}
+
+.digit-center .digit .asterisk {
+    font-size: 2rem;
+}
+
+.blue {
+    background-color: var(--clr-accent);
+    box-shadow: 0px 10px 30px -5px var(--clr-box-shadow-phone-button);
+}
+
+.asterisk {
+    font-size: 2rem;
+}
+
+.blue svg {
+    background-color: var(--clr-accent);
+    width: 2rem;
+    stroke: var(--clr-bg-pad);
+    fill: var(--clr-bg-pad);
+
+}
+
+.pad-call {
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--clr-accent);
+    background-image: ('https://images.unsplash.com/photo-1694057442309-bfe467bff9a9?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1974&amp;q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+
+}
+
+
+@media (max-width: 40rem) {
+    body {
+        display: grid;
+        place-content: start center;
+        background-color: var(--clr-bg-pad);
+    }
+
+    .container {
+        padding-block-start: 0rem;
+        padding-block-end: 2rem;
+    }
+
+    .pad-header p {
+        height: 3rem;
+        font-size: 1.8rem;
+    }
+
+    .pad-header span {
+        margin-block-start: -1.6rem;
+        font-size: 1rem;
+    }
+
+    .pad-body {
+        row-gap: 1rem;
+        margin-block-start: 1rem;
+    }
+
+    .pad-body-item {
+        width: 4rem;
+    }
+
+    .digit {
+        margin-block-start: 1.3rem;
+        font-size: 1.2rem;
+    }
+
+    .letter {
+        font-size: .7rem;
+    }
+}
+
+</style>
