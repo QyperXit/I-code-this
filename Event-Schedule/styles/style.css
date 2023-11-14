@@ -1,0 +1,176 @@
+@import "https://unpkg.com/open-props";
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+} /* Add CSS here */
+body {
+  display: flex;
+  color: rgb(255, 255, 255);
+  background: #535353;
+  height: 100vh;
+  font-family: var(--font-sans);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  color: rgb(10, 10, 10);
+}
+
+.container {
+  background: #fff;
+  margin: 1rem;
+  width: 400px;
+  padding-bottom: 1.75rem;
+}
+
+nav {
+  background: var(--gradient-23);
+  padding: 0 1rem;
+  color: #fff;
+  padding-top: 1rem;
+  box-shadow: var(--shadow-2);
+}
+
+.col {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.container-profile h1 {
+  font-size: 1.2rem;
+}
+
+.event {
+  margin-top: 2px;
+  font-size: 12px;
+}
+
+img {
+  width: 2.8em;
+  height: 3em;
+  border-radius: 50%;
+  box-shadow: var(--shadow-2);
+}
+
+.month {
+  display: flex;
+  font-size: 10px;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.month h2 {
+  padding-bottom: 0.25rem;
+  font-weight: var(--font-weight-3);
+}
+
+.tick {
+  display: flex;
+  padding: 1rem;
+  gap: 4rem;
+  justify-content: space-between;
+}
+
+.left {
+  font-size: 14px;
+  color: var(--gray-8);
+  padding-block: 0.5rem;
+  padding-left: 18px;
+  position: relative;
+}
+
+.left::before {
+  position: absolute;
+  content: "";
+  width: 8.5px;
+  height: 8px;
+  border-radius: 50%;
+  background: red;
+  translate: -15px 6px;
+}
+
+.left::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 108px;
+  border-radius: 50%;
+  background: rgba(188, 188, 188, 0.357);
+  translate: -11px -54px;
+}
+
+.location {
+  margin-top: 15px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: var(--gray-6);
+}
+
+.fa-location-dot,
+.fa-clock,
+.fa-ticket {
+  margin-right: 5px;
+}
+
+button {
+  width: 6rem;
+  height: 2rem;
+  border-radius: 25px;
+  border: none;
+  padding: 0 5px;
+  background: var(--gradient-23);
+  color: #fff;
+  box-shadow: var(--shadow-2);
+}
+
+.sold {
+  width: 6rem;
+  height: 2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(55, 75, 91, 0.0980392157);
+  padding: 0 5px;
+  background: var(--grey-1);
+  color: rgba(55, 75, 91, 0.6039215686);
+  box-shadow: var(--shadow-1);
+}
+
+.fa-bell {
+  position: relative;
+  z-index: 0;
+}
+
+.fa-bell::before {
+  position: absolute;
+  content: "";
+  width: 8.5px;
+  height: 8px;
+  border-radius: 50%;
+  background: red;
+  translate: -15px 10px;
+  z-index: 2;
+}
+
+.months {
+  border-bottom: 3px solid black;
+  transition: border-bottom 250ms --ease-in-out-5;
+}
+
+.months:hover {
+  cursor: pointer;
+}
+
+.selected {
+  border-bottom: 3px solid red;
+  transition: border-bottom 250ms ease-in-out;
+}
+
+.tickets:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
