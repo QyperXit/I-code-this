@@ -1,0 +1,202 @@
+/* Add CSS here */
+
+
+body{
+    gap: 5rem;
+    background: #f6f8fc;
+}
+ .container{
+    background-color: white;
+    color: #181028;
+    /* padding: 8px; */
+    margin-bottom: 1rem;
+    /* Adjust spacing as needed */
+    box-shadow: 0 4px 6px rgba(215, 215, 215, 0.1);
+    border-radius: .25rem;
+    max-width: 20rem;
+    padding-bottom: 10px;
+   
+    /* Adjust the maximum width as needed */
+ }
+
+.img-1{
+
+        border-top-right-radius: .15em;
+        border-top-left-radius: .15em;
+        
+}
+ .follow{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ button{
+    background-color: black;
+    color: white;
+    padding: 6px 35px;
+    border-radius: 25px;
+    font-weight: 600;
+    margin-top: 18px;
+    margin-bottom: 38px;
+    /* transition: transform 0.3s ease; */
+    transition: transform 200ms, box-shaow 200ms;
+    box-shadow:  hsla(0, 0%, 53%, 30%) 2px 3px 0;
+ }
+
+ button:hover{
+    transform: translate(-1px, -7px);
+    
+ }
+
+ button:active{
+   transform: translateY(4px) translateY(4px);
+   box-shadow: #094c66 0 0 0;
+ }
+
+
+ 
+
+ .h1{
+    font-weight: 600;
+    font-size: 1.25em;
+    margin-top: 60px;
+ }
+
+ .at{
+    color: #686868;
+ }
+
+ .user-profile{
+        position: absolute;
+        width: 5rem;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        box-shadow: 0 4px 7px #a1a1a1;
+        top: -45px;
+ }
+
+ .profile{
+    width: 12%;
+        /* Take up 100% of the container's width */
+        height: 100%;
+        /* Take up 100% of the container's height */
+        object-fit: cover;
+        /* Maintain aspect ratio and cover the entire container */
+        aspect-ratio: 1;
+        border-radius: 50%;
+        box-shadow: 0 4px 7px #a1a1a1;
+        
+ }
+
+ .top{
+    display: flex;
+    font-size: .9em;
+    align-items: center;
+    padding: 1.75rem;
+    
+ }
+
+ .boxfollow{
+    margin-left: 14px;
+ }
+
+ h2{
+    font-weight: 600;
+ }
+
+ p{
+    color: #686868;
+    font-size: .75rem;
+ }
+
+ .btn-white{
+    margin: 0;
+    background-color: white;
+    color: #686868;
+    border: 1px solid  #ebebeb;;
+    margin-left: auto;
+    
+ }
+
+ .big{
+    max-width: 30rem;
+    display: none;
+   animation: fade-in 1s ease-in-out;
+ }
+
+ .bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5em;
+    margin-top: 1.25em;
+    position: relative;
+ }
+
+ .fa-share{
+    font-size: .85rem;
+    margin-left: 35px;
+ }
+
+ .btn-white-2{
+    /* margin: 0; */
+        background-color: white;
+        color: #686868;
+        border: 1px solid #ebebeb;
+        ;
+        /* margin-left: auto; */
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 10px;
+ }
+
+ .small{
+    max-width: 25rem;
+ }
+
+@media (max-width: 1130px) {
+   .bottom{
+        display: flex;
+            justify-content: center;
+            gap: 0;
+            padding: 2em;
+            
+      }
+
+      .share> button:nth-child(1){
+         padding: 5px 20px;         
+         /* margin-left: .3em; */
+      }
+
+             .share>button:nth-child(2) {
+                padding: 5px 20px;
+               
+                
+             }
+
+      .share{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+}
+
+.middle{
+   display: none;
+   animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+}
