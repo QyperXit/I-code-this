@@ -1,0 +1,146 @@
+/* Add CSS here */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background: #fff;
+    width: min(100% - 2rem, 25em);
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    box-shadow: -25px -25px 0px 10px #B9D4E4;
+}
+
+h1{                                      
+    font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;  
+  font-size:1.3rem;                                                             
+}
+
+img{
+    width: 6em;
+        max-width: 100%;
+        /* Adjust the pixel value as needed */
+        height: 6em;
+}
+
+h2{
+    font-size: .85rem;
+}
+
+.item{
+    display: flex;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding-bottom: 1rem;
+    margin-top: 1.5em;
+}
+
+input{
+    width: 30px;
+    border: 2px solid rgb(180, 180, 180);
+    margin-top: 10px;
+    margin-inline: 5px ;
+    border-radius: 3px;
+    text-align: center;
+    user-select: none;
+}
+
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+h3{
+    font-weight: 600;
+    font-size: .85rem;
+    margin-top: 10px;
+}
+
+.desc{
+    margin-top: .5rem;
+}
+
+.stock{
+    color: rgb(255, 255, 255);
+    background:#82BF45;
+    font-size: .75rem;
+    padding: .05rem .8rem;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-weight: 600;
+
+}
+
+.digits{
+    margin-top: 10px;
+}
+
+.package{
+ padding: .5em;
+}
+
+.free{
+    display: flex;
+    justify-content: space-between;
+    font-size: .85rem;
+    margin-top: .9rem;
+}
+
+.nok{
+    font-weight: 600 ;
+    display: flex;
+    justify-content: space-between;
+    font-size: .85rem;
+    margin-top: .85rem;
+}
+
+a{
+    color: rgb(0, 115, 255);
+    text-decoration: underline;
+    margin-top: .9rem;
+    font-size: .7rem;
+}
+
+.check{
+    background: #4379FF;
+    color: white;
+    display: flex;
+    margin-inline: auto ;
+    font-size: .85rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    padding: .75rem 9.8em;
+    border-radius: 25px;
+}
+
+.check:hover{
+    background: #4378ffad;
+    transition: background 250ms ;
+}
+
+.fa-solid{
+    background: #E4F2FB;
+    padding: 5px;
+    border-radius: 2px 2.5px;
+}
+
+.fa-solid:hover{
+    cursor: pointer;
+    user-select: none;
+}
+
+.fa-solid:active{
+    background: rgb(203, 203, 203);
+}
+
+.bold{
+    font-weight: 600;
+}
