@@ -1,0 +1,226 @@
+/* Add CSS here */
+
+body{
+    color:aliceblue;
+    font-size: 16px;
+
+}
+
+/* Add styling to hide and show pages */
+.hidden {
+    display: none;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #37394A;
+    max-width: 620px;
+    padding: 1rem;
+    border-radius: .15rem;
+    padding-bottom: 2.5rem;
+    animation: appearScale 0.5s ease-in-out forwards;
+}
+
+.top{
+    display: flex;
+    width: 88.5%;
+    padding: 2rem 0;
+    
+}
+
+.top p {
+    font-size: 1.75rem;
+    
+}
+
+/* view animation */
+.view {
+    position: relative;
+    /* Needed for absolute positioning of the pseudo-element */
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    margin-left: auto;
+}
+
+.view::before {
+    content: '';
+    /* Create a pseudo-element */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    /* Initially no width */
+    height: 1px;
+    /* Height of the border */
+    background-color: white;
+    /* Color of the border */
+    transition: width 0.3s ease;
+    /* Transition for border width */
+}
+
+.view:hover::before {
+    width: 100%;
+    /* Expand the width to 100% on hover */
+    transition: width 0.3s ease;
+    /* Transition for border width */
+    /* Optionally, you can change the animation easing for a different effect */
+    /* transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1); */
+    /* cubic-bezier values can be adjusted for different easing effects */
+}
+
+.view:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+/*  */
+.middle{
+    display: flex;
+    flex-direction: column;
+    width: 88.5%;
+}
+
+.select{
+    display: flex;
+    font-size: 1.45rem;
+    transition: padding 0.3s ease;
+    
+}
+
+.select:hover{
+    background-color: #2D2E40;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+
+}
+
+.new {
+    background-color: aqua;
+    color: #2D2E40;
+    border-radius: 1rem;
+    padding: 1px 8px;
+    margin-left: 13px;
+    transform: scale(1);
+    /* Start with normal scale */
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+    /* Add transition for transform */
+}
+
+.new:hover {
+    background-color: rgb(106, 255, 0);
+    color: #2D2E40;
+    transform: scale(1.2);
+    /* Scale on hover */
+}
+
+.vote{
+    background: linear-gradient(to bottom right, #6b89ff,rgb(153, 126, 240) , #c479d7);
+    color: #ffffff;
+    border-radius: .25rem;
+    padding: 5px 38px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: auto;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.vote:hover{
+    transform: scale(1.2);
+    background: linear-gradient(to bottom right, #bcff6b, rgb(126, 240, 175), #d7cf79);
+}
+
+.closed{
+    background-color: #E47F51;
+        color: #2D2E40;
+        border-radius: 1rem;
+        padding: 1px 8px;
+        margin-left: 13px;
+        font-size: 1rem;
+        transform: scale(1);
+        transition: transform 0.3s ease;
+}
+
+.closed:hover{
+    transform: scale(0.8);
+}
+
+span{
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+/* hide */
+
+.hidden {
+    display: none;
+}
+
+/* vote now */
+
+.fa-circle{
+    display: flex;
+    color: white;
+    font-size: 5rem;
+    margin-top: 2.5rem;
+}
+
+h1{
+    font-size: 1.85rem;
+    margin-top: 1rem;
+}
+
+.upload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.nowV{
+    background: linear-gradient(to bottom right, #6b89ff, rgb(153, 126, 240), #c479d7);
+        color: #ffffff;
+        border-radius: .25rem;
+        padding: 10px 58px;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        transform: scale(1);
+        transition: transform 0.3s ease;
+}
+
+.nowV:hover{
+    transform: scale(1.2);
+        background: linear-gradient(to bottom right, #bcff6b, rgb(126, 240, 175), #d5d779);
+        
+}
+
+
+.container-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #37394A;
+    max-width: 100%;
+    padding: 3rem 5.5rem;
+    border-radius: .15rem;
+    /* padding-bottom: 2.5rem; */
+   
+    
+}
+
+@keyframes appearScale {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
