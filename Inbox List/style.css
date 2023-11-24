@@ -1,0 +1,235 @@
+/* Add CSS here */
+
+:root{
+    --cards:#0F172D;
+    --green: #517E33;
+    --yellow: #F7B857;
+    --name:#D1DFF3;
+    --bg:#0A0F1B;
+    --alpha:#1E2745;
+    --darkgrey:#4c567c;
+}
+
+
+
+.container{
+    color: var(--name);
+    background-color: var(--bg);
+    padding: 1.35em;
+    max-width: 540px;
+    
+    opacity: 1; /* Start with 0 opacity */
+    animation: fade-in 200ms ease-in-out;
+    overflow: hidden;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.hide{
+    display: none;
+    opacity: 0;
+        /* Start with 0 opacity */
+}
+
+
+.wrapper{
+    background-color: var(--cards);
+    padding: 1.55em;
+    border-bottom: 3px solid var(--bg);
+    transform: translate(0, 0);
+    overflow: hidden;
+    opacity: 1;
+        /* Start with 0 opacity */
+    transition: transform 500ms, opacity 500ms;
+    
+    
+    
+}
+
+.zip{
+    transform: translate(-600px, 0);
+    opacity: 0;
+    animation: fade-out 200ms ease-in-out;
+   
+    
+}
+
+@keyframes fade-out {
+    10% {
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+.wrapper:hover{
+    border-left: 6px solid var(--green);
+    transform: translate(2px, 3px);
+    transition: transform 200ms;
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.936);
+}
+/* search bar */
+input{
+    border: none;
+    background-color: var(--cards);
+    font-weight: 200;
+    
+}
+
+
+
+input::placeholder {
+    color: var(--name);
+    /* Placeholder text color */
+    /* font-style: italic; */
+    /* Italicize placeholder text */
+    font-size: .75em;
+    padding-left: 15px;
+    font-weight: 200;
+}
+
+
+.search{
+    font-size: 1.5em;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid var(--bg);
+    background-color: var(--cards);
+    padding: 1.1em;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.fa-angle-down{
+    margin-left: auto;
+    color: var(--darkgrey);
+    transform: translate (0, 0 );
+}
+
+.fa-angle-down:active{
+    transform:  translate(-2px, -2px);
+}
+
+.fa-magnifying-glass{
+    color: var(--alpha);
+}
+
+/* card */
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.name{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2.5em;
+   
+}
+
+.desc{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-ellipsis-vertical{
+    color: var(--alpha);
+}
+
+.starName{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    
+}
+
+h1{
+    color: var(--name);
+}
+
+p{
+    margin-top: 10px;
+    color: var(--darkgrey);
+}
+
+span{
+    color: var(--darkgrey);
+}
+
+/* notifaction */
+
+.notify{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    padding: 4em;
+    position: relative;
+    transition: all 500ms;
+}
+
+.notify::after{
+    content: "5";
+    color: white;
+    font-size: 1.45em;
+    position: absolute;
+    background: #517E33;
+    padding:  .2em .6em;
+    border-radius: 5px;
+    top: 45px;
+    left: 134px;
+    animation: bounce 1200ms infinite;
+        /* Use the bounce animation infinitely */
+        
+
+}
+
+.notify p {
+    font-weight: 600;
+}
+
+.fa-message{
+    color: var(--name);
+    font-size: 4em;
+    margin-bottom: .4em;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+        /* Initial position and bounce positions */
+    }
+
+    40% {
+        transform: translateY(-20px);
+        /* Bounce up */
+    }
+
+    60% {
+        transform: translateY(-15px);
+        /* Bounce down */
+    }
+}
+
