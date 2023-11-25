@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    	<link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<!-- Change code below this line -->
+<body>
+		<div class="content vone">
+			<iconify-icon icon="ph:x-light" class="close"></iconify-icon>
+			<div class="container">
+				<div class="slant_1"></div>
+				<iconify-icon icon="mdi:wifi-alert"></iconify-icon>
+				<h1>Error!</h1>
+				<p>Connection couldn't be established.</p>
+				<span>RETRY</span>
+			</div>
+		</div>
+		<div class="content vtwo">
+			<iconify-icon icon="ph:x-light" class="close ctwo"></iconify-icon>
+			<div class="container_2">
+				<div class="slant_2"></div>
+				<iconify-icon icon="mdi:wifi-check"></iconify-icon>
+				<h1>Success!</h1>
+				<p>Connection works perfectly.</p>
+				<span>RETRY</span>
+			</div>
+		</div>
+
+		<script>
+			let closeElement = document.querySelector(".close");
+			let closeElement2 = document.querySelector(".ctwo");
+
+			let hideElement = document.querySelector(".vone");
+			let hideElement2 = document.querySelector(".vtwo");
+
+			closeElement.addEventListener("click", () => {
+				hideElement.classList.add("hide");
+			});
+
+			closeElement2.addEventListener("click", () => {
+				hideElement2.classList.add("hide");
+			});
+		</script>
+	</body>
+<!-- Change code above this line -->
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,83 @@
+/* Add CSS here */body {
+  background-color: #252f45;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 5em;
+}
+
+.container, .container_2 {
+  background: white;
+  width: 340px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+}
+.container div, .container_2 div {
+  width: 500px;
+  height: 200px;
+  background: linear-gradient(to right, #ff0062, #ff4d4d);
+  transform: translateX(-45px) translateY(-96px) rotate(-15deg);
+  position: absolute;
+}
+.container iconify-icon, .container_2 iconify-icon, .container h1, .container_2 h1 {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.1em;
+  font-size: 5em;
+  color: white;
+  font-weight: 800;
+}
+.container h1, .container_2 h1 {
+  color: black;
+  font-size: 2em;
+  margin-top: 1.5em;
+}
+.container p, .container_2 p, .container span, .container_2 span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container span, .container_2 span {
+  font-weight: 600;
+  color: rgba(0, 162, 255, 0.911);
+}
+.container:hover, .container_2:hover {
+  mix-blend-mode: soft-light;
+  cursor: pointer;
+}
+
+.container_2 div {
+  width: 400px;
+  height: 200px;
+  background: linear-gradient(to right, #00ffaa, #4dff62);
+  transform: translateX(-45px) translateY(-96px) rotate(-15deg);
+  position: absolute;
+}
+
+.content {
+  position: relative;
+  transform: translateX(0);
+}
+.content .close {
+  position: absolute;
+  color: #a5a5a5;
+  top: -18px;
+  right: -18px;
+  z-index: 1;
+}
+.content .close:hover {
+  color: aliceblue;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.hide {
+  transform: translateX(-550%);
+  transition: transform 350ms ease-in-out;
+}/*# sourceMappingURL=style.css.map */
