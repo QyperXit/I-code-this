@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+</head>
+
+<!-- Change code below this line -->
+<body>
+    <div class="container hide">
+        <h1>Confirm</h1>
+        <iconify-icon icon="octicon:x-24" class="icon"></iconify-icon>
+        <div class="wrapper">
+            <div class="question">
+                <h2>?</h2>
+                <div class="dot"></div>
+                <p>
+                    Are you sure you want to navigate<br />
+						away from this page?
+                </p>
+                <span
+						>Press OK to continue, or Cancel to stay on the current
+						page</span>
+                <div class="buttons">
+                    <div class="forward">OK</div>
+                    <div class="cancel">Cancel</div>
+                    <!-- <div class="forward">OK</div>
+						<div class="cancel">Cancel</div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contB">Continue</div>
+   
+</body>
+
+<script>
+    // Add JavaScript code here
+    let contB = document
+    .querySelector(".contB")
+    .addEventListener("click", check);
+    let back = document
+    .querySelector(".cancel")
+    .addEventListener("click", remove);
+    let forward = document
+    .querySelector(".forward")
+    .addEventListener("click", remove);
+    
+    let main = document.querySelector(".container");
+    let hideB = document.querySelector(".contB");
+    
+    function check() {
+    main.classList.remove("hide");
+    hideB.classList.add("hide");
+    }
+    
+    let icon = document
+    .querySelector(".icon")
+    .addEventListener("click", remove);
+    
+    function remove() {
+    main.classList.add("hide");
+    }
+</script>
+<!-- Change code above this line -->
+
+</html>

@@ -1,0 +1,159 @@
+/* Add CSS here */
+body {
+    background-image: url("https://images.unsplash.com/photo-1576058194458-986dde325e3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1918&q=80");
+    backdrop-filter: blur(350px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    min-height: 100vh;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    /* gap: 5em; */
+}
+
+.container {
+    width: 550px;
+    background: #eaf3f7;
+    padding: 10px 18px;
+    border-radius: 6px;
+    position: relative;
+    transform: scale(1);
+    animation: scaleAnimation 150ms ease-in-out forwards;
+}
+
+.wrapper {
+    padding: 0.5em 3em;
+}
+
+.question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.question h2 {
+    font-size: 5em;
+    margin: 0;
+    background: #d1dfea;
+    padding: 1px 18px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.question p {
+    font-size: 1.2em;
+    text-align: center;
+    color: #2872bc;
+}
+
+.question span {
+    margin-top: 15px;
+    color: rgb(163, 163, 186);
+    font-size: 0.9em;
+}
+
+h1 {
+    font-size: 1em;
+    color: #bdbfc1;
+    border-bottom: 1px solid #bdbfc1;
+    padding-bottom: 0.5em;
+    
+}
+
+.buttons {
+    display: flex;
+}
+
+.forward {
+    background-color: #2872bc;
+    padding: 0.5em 2.5em;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    box-shadow: -1px 10px 9px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.forward:hover {
+    background-color: #a6f9de;
+    color: #3a7bbb;
+    transition: background 250ms ease-in;
+}
+
+.cancel {
+    margin-left: 12px;
+    background: #d1dfea;
+    padding: 0.5em 2.5em;
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+}
+
+.cancel:hover {
+    background-color: #bb893a;
+    color: #ffffff;
+    transition: background 250ms ease-in;
+}
+
+.icon {
+    color: #b8b8b9;
+    font-size: 1.8em;
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    transform: rotate(0);
+}
+
+.icon:hover {
+    font-size: 1.9em;
+    transform: rotate(25deg);
+    transition: transform 250ms ease-in;
+    cursor: pointer;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background: #d1dfea;
+    position: absolute;
+    top: 181px;
+    rotate: 45deg;
+  
+}
+
+.hide {
+    display: none;
+    transform: scale(0.2);
+    transition: transform 959ms ease-in;
+}
+
+.contB {
+    background: #d1dfea;
+    color: #3a7bbb;
+    padding: 12px 20px;
+    border-radius: 4px;
+    transform: scale(1);
+}
+
+.contB:hover {
+    background: #d0d0d0;
+    color: #0e0e0e;
+    transition: background 250ms ease-in;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(0.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
