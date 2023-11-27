@@ -1,0 +1,127 @@
+/* Add CSS here */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(184, 206, 210);
+  color: rgb(255, 255, 255);
+  min-height: 100vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 2px 6px 20px rgb(139, 228, 244);
+}
+.outer::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: rgb(233, 251, 254);
+  position: absolute;
+  top: -7px;
+  right: 25px;
+  rotate: 45deg;
+}
+
+.outside {
+  position: absolute;
+  top: -75px;
+  right: 0px;
+  font-size: 1.8em;
+}
+.outside iconify-icon:nth-child(2) {
+  background: rgb(124, 206, 221);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  animation: shake-pause 3s ease-in-out infinite;
+}
+.outside iconify-icon:nth-child(2)::after {
+  content: "97";
+  color: rgb(112, 181, 82);
+  background: white;
+  position: absolute;
+  padding: 1px 6px;
+  border-radius: 40%;
+  font-size: 0.5em;
+  top: 0;
+  right: -12px;
+}
+.outside iconify-icon:nth-child(1) {
+  background: white;
+  color: rgb(124, 206, 221);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.container {
+  color: grey;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4em 0.95em;
+}
+.tab h2 {
+  font-size: 0.9em;
+  color: rgb(171, 170, 170);
+}
+.tab span {
+  margin-left: auto;
+  border: 1px solid rgb(112, 181, 82);
+  padding: 1px 8px;
+  border-radius: 40%;
+  font-size: 0.8em;
+  color: rgb(171, 170, 170);
+}
+.tab:hover {
+  background: rgb(234, 245, 247);
+  color: rgb(255, 255, 255);
+  transition: background 250ms ease-out;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 1em;
+  margin: 0 auto;
+  font-weight: 500;
+  background: rgba(193, 249, 255, 0.318);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.9em 0em;
+  color: rgb(0, 175, 206);
+}
+
+iconify-icon {
+  margin-right: 8px;
+  color: rgb(124, 206, 221);
+}
+
+@keyframes shake-pause {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}/*# sourceMappingURL=style.css.map */

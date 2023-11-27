@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+</head>
+
+<!-- Change code below this line -->
+<body class="bg-[#181028] flex justify-center items-center min-h-screen">
+    <div class="outer">
+        <div class="outside">
+            <iconify-icon icon="tabler:message"></iconify-icon>
+            <iconify-icon icon="tabler:bell-filled" class="shake"></iconify-icon>
+        </div>
+        <h1>NOTIFICATIONS</h1>
+        <div class="container">
+            <div class="col">
+                <div class="tab">
+                    <iconify-icon icon="ion:person-add"></iconify-icon>
+                    <h2>Friends requests</h2>
+                    <span>23</span>
+                </div>
+                <div class="tab">
+                    <iconify-icon icon="iconamoon:comment-fill"></iconify-icon>
+                    <h2>Comments</h2>
+                    <span>14</span>
+                </div>
+    
+                <div class="tab">
+                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                    <h2>Favorites</h2>
+                    <span>11</span>
+                </div>
+    
+                <div class="tab">
+                    <iconify-icon icon="mdi:eye"></iconify-icon>
+                    <h2>Visitors</h2>
+                    <span>49</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Change code above this line -->
+<script>
+    // Add JavaScript code here
+
+const element = document.querySelector(".shake");
+element.classList.add("pause");
+
+// After a few seconds, remove the pause class to resume the animation
+setTimeout(() => {
+    element.classList.remove("pause");
+}, 5000); // 5000 milliseconds (5 seconds)
+</script>
+</html>
