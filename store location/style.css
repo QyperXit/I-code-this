@@ -1,0 +1,141 @@
+/* Add CSS here */
+/* Add CSS here */
+body {
+    display: flex;
+    background: rgb(41, 27, 60);
+    color: rgb(255, 255, 255);
+    min-height: 100vh;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+    color: rgba(222, 224, 252, 0.829);
+}
+
+.container {
+    background: #1d1a38;
+    padding: 1.5em;
+    border-radius: 12px;
+    min-width: 277px;
+}
+
+.container h1 {
+    font-size: 1.1em;
+    position: relative;
+    font-weight: 600;
+}
+
+.container h1::before {
+    content: "Postal code";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    font-size: 0.5em;
+    right: 0;
+    z-index: 1;
+}
+
+.location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    margin-top: 30px;
+}
+
+.location input {
+    width: 90px;
+    height: 35px;
+    background: #1d1a38;
+    outline: 0.8px solid rgba(255, 255, 255, 0.146);
+    border-style: none;
+    padding-left: 10px;
+    color: white;
+}
+
+.gps {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #756bff;
+}
+
+h3 {
+    font-size: 0.8em;
+}
+
+span {
+    font-size: 9px;
+    font-weight: 600;
+    background: rgb(255, 32, 162);
+    padding: 3px 3px;
+    border-radius: 8px;
+}
+
+.target {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 12px;
+    padding: 0px;
+    margin: 0;
+    font-weight: 600;
+}
+
+p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.openTime {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 8px;
+    margin-bottom: 7px;
+
+}
+
+.fa-clock {
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+button {
+    width: 100%;
+    background: #756bff;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 10px;
+    margin-top: 5px;
+}
+
+button:hover {
+    background: rgba(155, 151, 203, 0.5019607843);
+    cursor: pointer;
+}
+
+.green {
+    background: rgb(57, 178, 128);
+}
+
+.wrap {
+    position: relative;
+}
+
+.pink {
+    width: 270px;
+    height: 270px;
+    z-index: -1;
+    background: linear-gradient(to bottom right, #ff8282, #d437df);
+    position: absolute;
+    top: -60px;
+    left: -80px;
+    border-radius: 0px 25px 25px 25px;
+}
+
+/*# sourceMappingURL=style.css.map */
