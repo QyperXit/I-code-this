@@ -1,0 +1,195 @@
+/* Add CSS here */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* Add CSS here */
+body {
+    display: flex;
+    background: rgb(32, 40, 78);
+    color: rgb(255, 255, 255);
+    min-height: 100vh;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+    color: rgba(222, 224, 252, 0.829);
+}
+
+.main {
+    background: rgba(52, 47, 77, 0.8);
+    /* Adjusted the background color */
+    padding: 2em;
+    display: flex;
+    gap: 1.75em;
+}
+
+.groups {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.left iconify-icon {
+    font-size: 1.6em;
+}
+
+.left iconify-icon:hover {
+    cursor: pointer;
+    color: #404e79;
+}
+
+.right {
+    font-size: 1.6em;
+}
+
+.right iconify-icon {
+    border: 1px solid #1b2138;
+    padding: 0.2em;
+    border-radius: 3px;
+}
+
+.right iconify-icon:hover {
+    background: #39436a;
+    cursor: pointer;
+}
+
+.right iconify-icon:focus {
+    background: #1b2138;
+}
+
+h1 {
+    font-size: 1.25em;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.85em;
+    gap: 1em;
+    background: #1b2138;
+    padding: 0.6em;
+    border-radius: 15px;
+}
+
+.side iconify-icon {
+    padding: 0.2em;
+}
+
+.side iconify-icon:hover {
+    background: rgba(57, 67, 106, 0.4078431373);
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.container {
+    display: grid;
+    height: 450px;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 equal columns */
+    grid-template-rows: repeat(2, 1fr);
+    /* 2 equal rows */
+    gap: 10px;
+}
+
+.container>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    /* Adjust font size as needed */
+    border-radius: 5px;
+}
+
+.card_1 {
+    background: #2f3651;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_1 h3 {
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.fa-plus {
+    background: #242c42;
+    padding: 15px;
+    padding-bottom: 13px;
+    border-radius: 100%;
+}
+
+.fa-plus:hover {
+    background: #323b55;
+    cursor: pointer;
+}
+
+.card_2 {
+    display: flex;
+    flex-direction: column;
+    background: #1b2138;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.numbers {
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.profile {
+    width: 30%;
+    height: 25%;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+.card_3 {
+    background: #1b2138;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_4 {
+    background: #1b2138;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_5 {
+    background: #1b2138;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_6 {
+    background: #1b2138;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_7 {
+    background: #1b2138;
+    display: flex;
+    flex-direction: column;
+}
+
+/*# sourceMappingURL=style.css.map */
