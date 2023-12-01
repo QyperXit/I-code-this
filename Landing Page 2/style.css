@@ -1,0 +1,254 @@
+/* Add CSS here */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    padding: 1.2em 0;
+    /* max-width: 50%; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    /* max-width: 1280px; */
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.131);
+    align-items: center;
+    padding-bottom: 1em;
+    
+}
+
+.links{
+    display: flex;
+    gap: 2em;
+    
+    color: rgb(101, 101, 101);
+}
+
+/* a{
+    display: inline;
+    flex-direction: column;
+} */
+
+.login_button{
+    display: flex;
+    gap: 10px;
+    margin-right: 2em;
+}
+.logo{
+    margin-left: 1.3em;
+    transform: scale(.7);
+}
+
+/* main  content*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10em;
+    max-width: 100%;
+    
+}
+
+h1{
+    font-weight: 600;
+    font-size: 3.2em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* padding: 0 2em; */
+}
+
+p{
+   font-weight: 600;
+   font-size: .9em;
+   text-align: center;
+   width: 400px;
+
+}
+
+.two{
+    margin-top: 2em;
+    background: #15203F;
+    color: white;
+    padding: 1.2em 2em;
+    font-size: .8em;
+    border-radius: 10px;
+}
+
+.two:hover{
+    
+            background: #37405a;
+            cursor: pointer;
+            transition: background 250ms;
+        
+}
+
+.bottom{
+    display: flex;
+    margin-top: 5em;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.wrap{
+    display: flex;
+    max-width: 100%;
+    gap: 15px;
+    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    /* border: 2px solid red; */
+}
+
+.card:hover{
+    /* border-bottom: 1px solid rgba(128, 128, 128, 0.11); */
+    background-color: rgba(128, 128, 128, 0.079);
+    transition: background-color 450ms;
+}
+
+h3{
+    font-size: .9em;
+    font-weight: 700;
+    color: #15203F;
+    padding: 1em 0;
+    text-align: left;
+}
+
+span{
+    /* align-items: flex-start; */
+    /* text-align: left; */
+    font-size: .7em;
+    color: rgb(48, 48, 48);
+    
+}
+
+.design{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: .9em;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    
+}
+
+/* .design > div{
+    
+    background: rgb(223, 0, 0);
+   
+    width: 100px;
+    height: 50px;
+    
+    border-bottom: 1px solid rgba(0, 0, 0, 0.213);
+
+}
+
+.design::after {
+    content: "";
+    /* background: black; */
+
+
+.line{
+    width: 100px;
+    background: black;
+}
+
+.trial{
+    background: #15203F;
+        color: white;
+        padding: .7em 2em;
+        font-size: .8em;
+        border-radius: 10px;
+}
+
+.trial:hover{
+    background: #37405a;
+    cursor: pointer;
+    transition: background 250ms;
+}
+
+
+.login{
+    background: #fbfaef;
+    border: 1px solid rgba(128, 128, 128, 0.079);
+        color: #15203F;
+        padding: .7em 2em;
+        font-size: .8em;
+        border-radius: 10px;
+}
+
+.login:hover{
+    background: #a5a5a648;
+    color: #15203F;
+        cursor: pointer;
+        transition: background 250ms;
+}
+
+.content{
+    padding: 0 10em;
+}
+
+@media (max-width: 733px) {
+    .wrap {
+            display: flex;
+            flex-direction: column;
+            min-width: 330px;
+            gap: 15px;
+    
+        }
+
+                nav {
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid rgba(128, 128, 128, 0.131);
+                    align-items: center;
+                    padding-bottom: 1em;
+                    flex-direction: column;
+                    
+        
+                }
+        
+                .links {
+                    display: flex;
+                    gap: 2em;
+                    flex-direction: column;
+                    color: rgb(101, 101, 101);
+                    
+                }
+
+                .login_button{
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 0em;
+                    margin-top: 1em;
+                }
+
+                                .logo {
+                                    margin-left: 0em;
+                                    transform: scale(.7);
+                                }
+
+}
