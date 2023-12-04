@@ -1,0 +1,259 @@
+/* Add CSS here */
+
+*{
+    font-size: 18px;
+}
+
+body{
+    background: #F5F5F5;
+    padding: 4em 10em;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #646363;
+    font-weight: 600;
+
+    
+}
+.content{
+    background: white;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.037);
+    width: 100%;
+    height: 85vh;
+    max-width: 1100px;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: column;
+    border-bottom: 1px solid rgb(243, 238, 238);
+}
+
+nav h1:nth-child(2){
+    
+    margin-left:  auto;
+}
+
+.side-nav{
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    gap: 2rem;
+}
+
+
+
+.get_start{
+    color: white;
+    background: black;
+    padding: 1rem 2rem;
+    overflow: hidden;
+    border: 2px so;
+}
+
+.login{
+    padding: 1rem 1.5rem;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+}
+
+  @media (max-width: 1240px) {
+    .container{display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 15px;
+        align-items: center;
+    }
+
+        .content {
+            background: white;
+            box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.037);
+            width: 100%;
+            height: 120vh;
+            max-width: 1100px;
+            justify-content: center;
+            align-items: center;
+            
+            
+    
+        }
+        .right{
+            margin-top: 35px;
+        }
+
+  }
+
+.left{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding-left: 3rem;
+}
+
+.config{
+    display: flex;
+    align-items: center;
+}
+
+.config h2{
+    background:rgba(128, 128, 128, 0.13);
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+
+.fa-slash{
+    rotate: 90deg;
+    padding: 0 5px;
+}
+
+.fa-circle{
+    font-size: .3rem;
+    transform: translateY(-2px);
+    padding: 0 1px;
+}
+
+.left > h3{
+    font-size: 1.75rem;
+    margin-top: 1rem;
+}
+
+.date{
+    display: flex;
+    margin-top: 25px;
+
+}
+
+.dates{
+    padding: 5px 15px;
+    color: rgba(128, 128, 128, 0.876);
+    font-size: .82rem;
+    
+}
+
+
+.active{
+    background: black;
+    color: white;
+    padding: 5px 15px;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    border-bottom: 1px solid rgb(240, 240, 240);
+    padding-bottom: 22px;
+    /* border: 2px solid red; */
+    width: 110%;
+    
+}
+
+.section p{
+    font-size: .75rem;
+    color: rgb(143, 143, 143);
+}
+
+.section h3{
+    margin-top: .3rem;
+    color: rgb(98, 98, 98);
+    
+}
+
+span{
+    color: #E395AD;
+}
+
+span:nth-child(1){
+    
+    font-size: .8rem;
+}
+
+.right{
+    border: 1px solid rgba(128, 128, 128, 0.229);
+    padding: 0rem  1.9rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin-right: 3rem;
+    justify-content: center;
+    height: 540px;
+}
+
+h4{
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    }
+
+    h5{
+        /* margin-top: 25px; */
+        color: rgb(98, 98, 98);
+    }
+
+
+
+    .right p{
+       
+        margin-top: 15px;
+        font-size: .7rem;
+    }
+
+    .logoBox{
+        display: flex;
+        align-items: center;
+        /* margin-top: 25px;  */
+                    
+
+    }
+
+    iconify-icon{
+        font-size: 1.2rem;
+        margin-right: 5px;
+    }
+
+    .col{
+        /* border: 2px solid red; */
+        padding: 1rem;
+    }
+
+    .col:hover{
+        background: black;
+        color: white;
+        cursor: pointer;
+        transition: background 250ms;
+    }
+
+    .col:hover h5 {
+        color: #fff;
+    }
+
+
+    h1:hover{
+        color: #E395AD;
+        cursor: pointer;
+        transition: color 250ms;
+        
+    }
+
+    .login:hover{
+        background: rgba(164, 164, 164, 0.117);
+        color: #E395AD;
+        transition: background 250ms;
+        cursor: pointer;
+    }
+
+    .dates:hover{
+        color: #E395AD;
+        cursor: pointer;
+    }
+
+
+      
+    
+
