@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* Add CSS here */
+body {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    display: flex;
+    color: rgb(0, 0, 0);
+    background: #1a1b36;
+    height: 100vh;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: rgb(10, 10, 10);
+}
+
+.circle {
+    height: 400px;
+    width: 400px;
+    background: #3c56d4;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    border-radius: 50%;
+    right: 250px;
+}
+
+.circleTwo {
+    height: 300px;
+    width: 300px;
+    background: #3c56d4;
+    position: fixed;
+    bottom: 220px;
+    z-index: -1;
+    border-radius: 50%;
+    left: 380px;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: "col1 col1 " "col2 col3" "col2 col3";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 3rem;
+}
+
+.header {
+    background: rgba(255, 255, 255, 0);
+    grid-area: col1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.header p {
+    margin-top: 2rem;
+}
+
+.left {
+    background: rgb(255, 255, 255);
+    grid-area: col2;
+    padding: 3em;
+    padding-right: 12em;
+    border-radius: 5px;
+    height: 390px;
+}
+
+.left h2 {
+    font-size: 1.35rem;
+}
+
+.left h3 {
+    margin-top: 3rem;
+}
+
+.left span{
+    margin-top: .5rem;
+    
+    
+}
+
+.right {
+    background: rgb(255, 255, 255);
+    grid-area: col3;
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    height: 610px;
+    border-radius: 5px;
+}
+
+.ticks {
+    margin-top: 2rem;
+}
+
+.fa-check {
+    background: rgba(236, 236, 255, 0.394);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+button {
+    background: rgb(0, 92, 251);
+    color: #fff;
+    margin-top: 2rem;
+    width: 130px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    transform: scale(1);
+}
+
+button:hover {
+    background: rgba(43, 117, 245, 0.623);
+    transform: scale(1.05);
+    transition: 250ms ease-in-out;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 875px) {
+	.grid {
+		grid-template-areas: "col1 " "col2" "col3";
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto auto;
+		gap: 1rem;
+	}
+}
+
