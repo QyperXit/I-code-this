@@ -1,0 +1,101 @@
+/* Add CSS here */
+
+
+.container{
+    background: #fff;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 3em 3.5em;
+    border-radius: 5px;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.092);
+}
+
+img{
+    width: 20em;
+}
+
+h1{
+    font-size: 1.25em;
+    font-weight: 600;
+    text-align: center;
+}
+
+p{
+    margin-top: 1.8rem;
+    text-align: center;
+}
+
+.buttons{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.last{
+      justify-content: center;
+}
+
+.skip{
+    color: grey;
+    transform: scale(1);
+}
+
+.fa-arrow-right{
+    color: rgb(255, 255, 255);
+    background: orange;
+    padding: 1em;
+    border-bottom-right-radius: 15px;
+    transform: scale(1);
+    box-shadow: 10px 10px 1px rgba(255, 167, 5, 0.184);
+}
+
+.fa-arrow-right:hover{
+    background: #e2e2e2;
+    color: black;
+    box-shadow: 10px 10px 1px rgba(176, 5, 255, 0.184);
+    cursor: pointer;
+}
+
+.skip:hover{
+    color: orange;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition:  tranform 250ms color 150ms;
+}
+
+.hide{
+    display: none;
+}
+
+.big{
+    padding: 1em 1em;
+    
+}
+
+.next{
+   
+    
+}
+
+.fa-arrow-right-long{
+    margin-left: 15px;
+}
+
+.get{
+    color: #fff;
+        background-color: orange;
+        padding: .65rem 1.6rem;
+        box-shadow: 10px 10px 1px rgba(255, 167, 5, 0.184);
+}
+
+.get:hover{
+    background: #e2e2e2;
+        color: black;
+        box-shadow: 10px 10px 1px rgba(176, 5, 255, 0.184);
+        cursor: pointer;
+}
