@@ -1,0 +1,170 @@
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  /* Other default CSS properties you want to reset */
+}
+
+
+
+body{
+    display: flex;
+   color: #fff;
+    /* justify-content: center; */
+    background: grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-inline: auto;
+    margin-top: 12em;
+ 
+}
+
+.container{
+    display: flex;
+        flex-direction: column;
+        /* width: 500px;
+        max-width: 100%; */
+        margin-inline: auto;
+        
+    /* grid-template-rows: 2fr; */
+   
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.top{
+    background:#231F39;
+    padding: 0 1.5em;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+
+
+
+img{
+    width: 8em;
+    border-radius: 50%;
+    padding: .5em;
+    border: 1px solid rgba(0, 255, 255, 0.513)
+}
+
+h1{
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+h2{
+    font-size: .75rem;
+    font-weight: 600;
+    margin-top: .5rem;
+    color: #aea9cea6;
+}
+
+p{
+    text-align: center;
+    color: #aea9cea6;
+    margin-top: .8em;
+
+}
+
+.clicks{
+    display: flex;
+    gap: 8px;
+    margin-top: 1.5rem;
+    margin-inline: 2.5em;
+
+}
+
+.message{
+    background: rgba(0, 255, 255, 0.823);
+    padding: 1rem 3rem;
+    border-radius: 5px;
+}
+
+.message:hover{
+    background: rgba(0, 255, 255, 0.129);
+    cursor: pointer;
+    transition: background 250ms;
+}
+
+.following{
+        color: rgba(0, 255, 255, 0.823);;
+        padding: 1rem 3rem;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 255, 255, 0.823);;
+}
+
+.following:hover{
+    background: rgba(0, 255, 255, 0.245);
+        color: #fff;
+        cursor: pointer;
+        transition: background 250ms;
+}
+
+.pro{
+    color: #1E1A36;
+    background: rgb(255, 208, 0);
+    display: flex;
+    justify-content: center;
+    width: 13%;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 5px;
+    align-self: flex-start;
+    margin-top: 1rem;
+    
+    
+}
+
+
+.bottom{
+  
+    background: #1E1A36;
+     padding: 2em 1.5em
+}
+
+
+.blocks{
+    border: 1px solid #aea9ce2e;
+    color: #aea9cea6;
+        /* Set a maximum width using em units */
+        text-align: center;
+        padding: 5px;
+}
+
+h3{
+    font-size: 1rem;
+    color: #ffffff97;
+    margin-bottom: .5em;
+}
+
+.contain{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 30px 30px 30px;
+    gap: 10px;
+}
+
+
+.hide{
+    display: hidden;
+}
+
+.side{
+    background: #1E1A36;
+    width: 200px;
+}
+
+
+
+
