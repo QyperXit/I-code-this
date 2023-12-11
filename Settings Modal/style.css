@@ -1,0 +1,209 @@
+/* Add CSS here */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    /* Other default CSS properties you want to reset */
+}
+
+:root {
+    --secondary-color: #F34B8D;
+    /* Define a global variable for the background color */
+    --main-text-color: #874989;
+    /* Define a global variable for the text color */
+}
+
+body{
+    background: rgb(237, 237, 237);
+    /* padding: 10em; */
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.813);
+    height: 100vh;
+    position: relative;
+}
+
+.custom-shape-divider-bottom-1698492429 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1698492429 svg {
+    position: relative;
+    display: block;
+    width: calc(187% + 1.3px);
+    height: 292px;
+}
+
+.custom-shape-divider-bottom-1698492429 .shape-fill {
+    fill: var(--main-text-color);
+}
+
+
+
+
+
+.container{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 2.5rem 0;
+    padding-left: 5rem;
+    padding-right: 2.5rem;
+    width: 850px;
+    border-radius: 1rem;
+    box-shadow: 0 10px 5px 0px  rgba(0, 0, 0, 0.172);
+    height: 760px;
+    z-index: 1;
+    
+}
+
+.close{
+    align-self: flex-end;
+    position: relative;
+}
+
+.close:hover{
+    cursor: pointer;
+}
+
+.close::before {
+    content: "Close";
+    color: transparent;
+    font-weight: 500;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 30px;
+    left: -20px;
+    transition: color 250ms;
+}
+
+.close:hover::before {
+    color: rgb(168, 168, 168);
+    
+}
+
+.fa-xmark{
+    font-size: 2rem;
+    color: rgb(168, 168, 168);
+    
+}
+
+h1{
+    color: var(--main-text-color);
+    font-size: 2.1em;
+    font-weight: 600;
+}
+
+h2{
+    color: var(--main-text-color);
+    margin-top: 3rem;
+    font-size: 1.45rem;
+}
+
+p{
+    margin-top: 1rem;
+    line-height: 1.25;
+}
+
+select{
+    border:3px solid rgba(149, 149, 149, 0.345);
+    width: 330px;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    border-radius: 5px;
+    padding: .5rem .5em;
+    background: #fff;
+    color: rgba(0, 0, 0, 0.685);
+    
+}
+
+.options{
+    
+    margin-right: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.options:first-of-type {
+    border-top: 1px solid rgba(128, 128, 128, 0.338);
+    margin-right: 3.5rem;
+    margin-top: 4rem;
+}
+
+.fa-circle{
+   color: var(--main-text-color);
+    font-size: 1.6rem;
+    padding-left: 2rem;
+    margin: 5px;
+    transition: padding 250ms;
+
+}
+
+
+
+.move{
+    margin-left: auto;
+        border: 3px solid rgba(149, 149, 149, 0.345);
+        /* padding: 2px 0; */
+        /* padding-left: 1rem;
+        padding-right: 1rem; */
+        
+        border-radius: 25px;
+        
+}
+
+.move:hover{
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 4em;
+    gap: 1.5em;
+    margin-bottom: 2em;
+}
+
+.save{
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.cancel{
+    border: 3px solid rgba(168, 168, 168, 0.505);;
+        color: rgb(168, 168, 168);
+        padding: 1rem 4rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        border-radius: 8px;
+}
+
+.save:hover{
+    background: var(--main-text-color);
+    cursor: pointer;
+}
+
+.cancel:hover{
+    background: var(--main-text-color);
+    cursor: pointer;
+    border: 3px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+
+}
+
