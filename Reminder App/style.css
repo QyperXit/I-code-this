@@ -1,0 +1,120 @@
+/* Add CSS here */
+
+.container{
+    background: #fff;
+    display: flex;
+    height: 550px;
+   
+}
+
+input{
+    border-radius: 25px ;
+    padding: .5rem .5em;
+    background: #41545D;
+    margin-inline: 1rem;
+    margin-top: 1.55rem;
+    
+}
+
+input:focus{
+    /* border: none; */
+    outline: 3px solid rgba(128, 128, 128, 0.389)
+}
+
+input::placeholder{
+    padding-left: 2rem;
+}
+
+.left{
+    background: #344750;
+    /* padding: 1em; */
+    color: #fff;
+   
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+    font-weight: 600;
+    font-size: .8rem;
+    align-items: center;
+    padding: .5em 0;
+}
+
+h2{
+  margin-left: 1rem;  
+}
+
+.row:hover {
+    background: #fff;
+    color: #2C4047;
+    cursor: pointer;
+        transition: background 250ms;
+}
+
+.row:hover span {
+    /* Your styles for the span on hover */
+    /* For instance */
+    background-color: #EEF2F3;
+        transition: background 250ms;
+}
+
+span{
+   background: #2C4047; 
+   padding: .25em .8em;
+   border-radius: 50%;
+   margin-right: 1rem;
+}
+
+.right{
+    width: 100%;
+    
+   
+    
+}
+
+.dots{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    padding: .6rem 0;
+    color: #344750;
+    background: #EEF2F3;
+    border-bottom: 1px solid #fff;
+    
+    
+    
+}
+
+.dots:hover{
+    background: #c0cccf;
+    cursor: pointer;
+    transition: background 250ms;
+}
+
+h1{
+    margin: 0 1rem;
+    font-weight: 600;
+}
+
+.fa-ellipsis-vertical{
+    margin-right: 2rem;
+}
+
+ul{
+    margin-left: 2rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+li{
+    margin: 0.6rem 0;
+}
+
+.active{
+    background: #fff;
+}
