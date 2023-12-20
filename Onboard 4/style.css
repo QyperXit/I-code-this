@@ -1,0 +1,214 @@
+/* Add CSS here */
+
+
+body{
+    background: rgb(34, 30, 30);
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.container{
+    width: min(100% - 1rem, 22em);
+    color: #fff;
+    background: #41545D;
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    opacity: 1;
+    animation: fadeIn 300ms  var(--ease-elastic-in-2);
+}
+
+
+.theme{
+    padding: min(5vw, 2em);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    color: #fff;
+    filter: grayscale(100%) brightness(0) contrast(20) invert(1);
+    width: 10em;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+p{
+    text-align: center;
+    margin-top: 1em;
+    font-weight: 600;
+}
+
+.dots{
+    display: flex;
+    align-self: center;
+    margin-top: 28em;
+    font-size: .35rem;
+    gap: 8px;
+}
+
+button{
+    display: flex;
+    margin-top: auto;
+    border: 1px solid #94949495;
+    color: #ffffffb2;
+    background: transparent;
+    width: 10%;
+    justify-content: center;
+    padding: 5px 30px;
+    border-radius: 5px;
+    margin-bottom: 1.85rem;
+    margin-left: 1.5rem;
+    
+}
+
+button:hover{
+    animation: var(--animation-shake-y) forwards;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+    animation: var(--animation-fade-out) forwards;
+    
+}
+
+.circle{
+    position: absolute;
+    background: #ee2b8c38;
+    width:40em;
+    height: 32em;
+    border-radius:  50%;
+    translate: -110px -90px;
+    z-index: 10;
+}
+
+.circle::after{
+    content: "";
+    background: #EE2B8E;
+        width: 40em;
+        height: 32em;
+        border-radius: 50%;
+        translate: -110px -10px;
+        position: absolute;
+        z-index: -10;
+        rotate: 20deg;
+        transform: skew( -20deg);
+}
+
+.circle::before {
+    content: "";
+    background: #ee2b8c3e;
+    width: 40em;
+    height: 32em;
+    border-radius: 50%;
+    translate: 150px 50px;
+    position: absolute;
+    z-index: -10;
+    rotate: 20deg;
+    transform: skew(-50deg);
+}
+
+.circle_1 {
+    position: absolute;
+    background: #a271e637;
+    width: 40em;
+    height: 32em;
+    border-radius: 50%;
+    translate: -110px -90px;
+    z-index: 10;
+}
+
+.circle_1::after {
+    content: "";
+    background: #A271E6;
+    width: 40em;
+    height: 32em;
+    border-radius: 50%;
+    translate: -110px -10px;
+    position: absolute;
+    z-index: -10;
+    rotate: 20deg;
+    transform: skew(-20deg);
+}
+
+.circle_1::before {
+    content: "";
+    background: #a271e62c;
+    width: 40em;
+    height: 32em;
+    border-radius: 50%;
+    translate: 150px 50px;
+    position: absolute;
+    z-index: -10;
+    rotate: 20deg;
+    transform: skew(-50deg);
+}
+
+
+/* asdasdad */
+
+.circle_2 {
+    position: absolute;
+    background: #dd50cd35;
+    width: 40em;
+    height: 32em;
+    border-radius: 50%;
+    translate: -110px -90px;
+    z-index: 10;
+}
+
+.circle_2::after {
+    content: "";
+    background: #DD50CD;
+    width: 40em;
+    height: 32em;
+    border-radius: 50%;
+    translate: -110px -10px;
+    position: absolute;
+    z-index: -10;
+    rotate: 20deg;
+    transform: skew(-20deg);
+}
+
+.circle_2::before {
+    content: "";
+    background: #dd50cd27;
+    width: 40em;
+    height: 32em;
+    border-radius: 50%;
+    translate: 150px 50px;
+    position: absolute;
+    z-index: -10;
+    rotate: 20deg;
+    transform: skew(-50deg);
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
