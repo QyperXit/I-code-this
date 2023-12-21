@@ -1,0 +1,140 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+iconify-icon {
+    font-size: 6rem;
+    color: #6958B6;
+}
+
+.container {
+    padding: 3em 2em;
+    margin-inline: auto;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    width: 340px;
+    position: relative;
+}
+
+h1 {
+    font-size: 1.5rem;
+
+}
+
+p {
+    text-align: center;
+    color: rgba(128, 128, 128, 0.683);
+    padding-inline: 1rem;
+}
+
+#user {
+    border: none;
+    border-bottom: 4px solid #a16bec5b;
+    width: 95%;
+    padding-block: .5rem;
+    margin-top: 1.5rem;
+    outline: none;
+
+}
+
+input {
+    margin-left: 20px;
+}
+
+
+
+#user::placeholder {
+    padding-left: 2.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: rgba(128, 128, 128, 0.472);
+}
+
+.check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.key,
+.person {
+    font-size: 1.5rem;
+
+
+}
+
+.key {
+    position: absolute;
+    top: 355px;
+    left: 40px;
+}
+
+.person {
+    position: absolute;
+    top: 298px;
+    left: 40px;
+}
+
+.select {
+    font-size: 1.5rem;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.select::after {
+    content: "Rememeber Me";
+    font-size: 1rem;
+    position: absolute;
+    top: 4px;
+    right: -120px;
+    color: grey;
+}
+
+.tick {
+    font-size: 1rem;
+    position: absolute;
+    translate: 4px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.forgot {
+    color: rgb(240, 59, 89);
+    font-family: cursive;
+
+}
+
+button {
+    width: 100%;
+    padding-block: 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+button:hover{
+    background: rgb(25, 48, 43);
+}
+
+.login {
+    background: #6958B6;
+
+}
+
+.signup {
+    background: #F43C7E;
+}
