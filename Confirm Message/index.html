@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="yourpath/all-animation.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="icon animate__animated animate__bounce">
+        <iconify-icon class="video-file" data- icon="flat-color-icons:video-file"></iconify-icon>
+    </div>
+
+
+    <div class="container hide">
+        <iconify-icon icon="icon-park:file-lock"></iconify-icon>
+        <div class="locked">File locked</div>
+
+        <h1>Your request to access the file has been sent.</h1>
+
+        <p>You will receive an email if and when your <br> request is approved</p>
+
+        <p>Find out more at the <a href="https://icodethis.com/">Help Center</a></p>
+    </div>
+
+</body>
+<script src="script.js">
+    document.addEventListener('DOMContentLoaded', () => {
+    let file = document.querySelector('.');
+
+    // Corrected the syntax for querying the container
+    let container = document.querySelector('.container');
+
+    file.addEventListener('click', e => {
+        console.log('hello');
+        file.classList.add('hide');
+    });
+});
+
+</script>
+
+</html>

@@ -1,0 +1,89 @@
+/* Add CSS here */
+body{
+    width: min(100% 1rem, 50em);
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background: rgba(206, 206, 248, 0.204);
+}
+
+.container{
+   display: flex;
+   flex-direction: column;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 5px  rgba(0, 0, 0, 0.093);
+    padding: 4em;
+    background: #fff;
+    opacity: 1;
+    animation: fadeIn 290ms ease-in;
+    
+}
+
+iconify-icon{
+    font-size: 6em;
+}
+
+.locked{
+    color: rgb(153, 57, 57);
+    border: 1px solid rgba(162, 105, 105, 0.194);
+    padding-inline:7px;
+    font-size: .85rem;
+    margin-top: 1rem;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.06), rgba(255, 17, 0, 0.218));
+    border-radius: 2px;
+}
+
+h1{
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 1.35rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+p:nth-of-type(1){
+    text-align: center;
+}
+a{
+    color: rgb(0, 110, 255);
+}
+
+.hide{
+    display: none;
+    animation: fadeOut 0.5s ease forwards;
+    opacity: 1;
+}
+
+
+.video-file{
+    cursor: pointer;
+}
+
+@keyframes fadeOut {
+    100% {
+            opacity: 1;
+        }
+    
+        50% {
+            opacity: 0.75;
+        }
+    
+        0% {
+            opacity: 0;
+        }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
