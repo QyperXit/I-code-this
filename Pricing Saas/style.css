@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #C2255C;
+  --secondary-color: #8325c2;
+}
+
+body {
+  background: var(--gray-11);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.wrapper {
+  border: 2px solid rgb(123, 123, 123);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 85%;
+  width: 80%;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+
+}
+
+.current {
+  color: var(--gray-1);
+  position: absolute;
+  top: 0;
+  background: var(--main-color);
+  padding: 1em 5.5em;
+  text-align: center;
+  line-height: 3rem;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+
+}
+
+.current h2 {
+  font-size: 1.5rem;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: var(--gray-10);
+  color: var(--gray-1);
+  align-items: center;
+  padding: 2em;
+  width: 385px;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: var(--font-size-fluid-2);
+
+}
+
+h1 {
+  font-size: var(--font-size-fluid-3);
+  margin-top: .35em;
+}
+
+span {
+  font-size: var(--font-size-fluid-1);
+}
+
+/* ul{
+    font-size: var(--font-size-fluid-1);
+    
+} */
+
+ul {
+  list-style: none;
+  /* Remove default list styles */
+  padding: 0;
+  /* Remove default padding */
+  font-size: 1.25em;
+  line-height: 2.5rem;
+}
+
+li {
+  position: relative;
+  /* Position the pseudo-elements relative to the list item */
+  padding-left: 20px;
+  /* Adjust the space between the bullet and the content */
+}
+
+li::before {
+  content: '\2022';
+  /* Unicode character for a bullet (you can change it) */
+  color: var(--main-color);
+  font-size: 1.5em;
+  /* Adjust the size of the bullet */
+  position: absolute;
+  /* Position the bullet absolutely */
+  left: 0;
+  /* Position the bullet to the left of the list item content */
+  top: 50%;
+  /* Align the bullet vertically in the middle */
+  transform: translateY(-50%);
+  /* Adjust for vertical alignment */
+  margin-right: 10px;
+  /* Adjust the space between the bullet and the content */
+}
+
+button {
+  background: var(--gray-10);
+  color: var(--grey-1);
+  box-shadow: var(--shadow-1);
+  padding-inline: var(--size-9);
+  padding-block: var(--size-4);
+  font-weight: 600;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  margin-top: 2em;
+
+}
+
+button:hover {
+  background: var(--main-color);
+  cursor: pointer;
+}
+
+
+
+/* Style for the dropdown */
+select {
+  padding: 15px 110px;
+  /* Adjust the padding as needed */
+  margin: 10px;
+  /* Adjust the margin as needed */
+  background-color: var(--gray-10);
+  /* Change the background color as needed */
+  color: var(--gray-1);
+  font-weight: 600;
+  font-size: 1.2em;
+  -webkit-appearance: none;
+  /* Add more styles as needed */
+  /* background-image: url('path/to/your-custom-arrow-icon.png');
+    background-repeat: no-repeat;
+    background-position: right center; */
+  border-radius: 5px;
+  border: 2px solid rgba(128, 128, 128, 0.715);
+  margin: 2rem 0;
+
+}
+
+/* Style for the options within the dropdown */
+option {
+  background-color: var(--gray-10);
+  /* Change the background color as needed */
+  color: var(--gray-1);
+}
+
+
+.choose {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.choose h1 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.choose p {
+  color: #fff;
+}
+
+.leftRight {
+  display: flex;
+  align-items: center;
+}
+
+
+/* Genel stil */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  margin: 10px;
+}
+
+/* Giriş stil */
+.toggle-switch .toggle-input {
+  display: none;
+}
+
+/* Anahtarın stilinin etrafındaki etiketin stil */
+.toggle-switch .toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 24px;
+  background-color: #2196F3;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Anahtarın yuvarlak kısmının stil */
+.toggle-switch .toggle-label::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+/* Anahtarın etkin hale gelmesindeki stil değişiklikleri */
+.toggle-switch .toggle-input:checked+.toggle-label {
+  background-color: var(--main-color);
+}
+
+.toggle-switch .toggle-input:checked+.toggle-label::before {
+  transform: translateX(16px);
+}
+
+/* Light tema */
+.toggle-switch.light .toggle-label {
+  background-color: #BEBEBE;
+}
+
+.toggle-switch.light .toggle-input:checked+.toggle-label {
+  background-color: #9B9B9B;
+}
+
+.toggle-switch.light .toggle-input:checked+.toggle-label::before {
+  transform: translateX(6px);
+}
+
+/* Dark tema */
+.toggle-switch.dark .toggle-label {
+  background-color: #4B4B4B;
+}
+
+.toggle-switch.dark .toggle-input:checked+.toggle-label {
+  background-color: #717171;
+}
+
+.toggle-switch.dark .toggle-input:checked+.toggle-label::before {
+  transform: translateX(16px);
+}
