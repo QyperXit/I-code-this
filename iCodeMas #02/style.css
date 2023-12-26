@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 92, 128);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+width: 900px;    
+padding: 3em ;
+padding-block: 5em;
+display: flex;
+flex-direction: column;
+text-align: center;
+background: rgb(235, 241, 243);
+        
+}
+
+.top-text{
+    padding-inline: 7em ;
+    margin-top: 1rem;
+}
+
+.list{
+    padding-top: 3rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    position: relative;
+}
+
+.list img{
+    border: 4px solid rgba(78, 144, 169, 0);
+    
+}
+
+img{
+    
+}
+
+.new{
+    content: "NEW";
+    border: 4px solid rgba(169, 92, 78, 0);
+    position: absolute;
+    color: black;
+    left: 305px;
+    font-size: .5rem;
+    color: #fff;
+    font-weight: 600;
+    background: rgb(0, 92, 128);
+    padding: 1px;
+    top: 50px;
+    z-index: 10;
+  }
+
+  .newTo{
+    border: 4px solid rgba(169, 92, 78, 0);
+    position: absolute;
+    color: black;
+    left: 0px;
+    font-size: .9rem;
+    color: #fff;
+    font-weight: 600;
+    background: rgb(0, 92, 128);
+    padding: 1px;
+    top: 0px;
+    z-index: 10;
+  }
+
+    .saleTo{
+        border: 4px solid rgba(169, 92, 78, 0);
+            position: absolute;
+            color: black;
+            left: 0px;
+            font-size: .9rem;
+            color: #fff;
+            font-weight: 600;
+            background: rgb(214, 6, 6);
+            padding: 1px;
+            top: 0px;
+            z-index: 10;
+    }
+
+  .sale{
+    content: "-25%";
+    border: 4px solid rgba(169, 92, 78, 0);
+        position: absolute;
+        color: black;
+        left: 410px;
+        font-size: .5rem;
+        color: #fff;
+        font-weight: 600;
+        background: rgb(214, 6, 6);
+        padding: 1px;
+        top: 51px;
+        z-index: 10;
+  } 
+  
+
+.list img:hover{
+    border: 4px solid rgb(0, 92, 128);
+    cursor: pointer;
+
+}
+
+
+.fa-star, .fa-star-half-stroke{
+    color: rgb(255, 179, 0);
+    margin-top: .55rem;
+}
+
+
+.card{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    gap: 1.5rem;
+    position: relative;
+    width: 70%;
+    margin-inline: auto;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.card img{
+    width: 15em;
+
+}
+
+.detail{
+    text-align: start;
+    font-size:  .9rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: .25rem;
+    height: 100%;
+    /* border: 2px solid red; */
+   
+
+}
+
+span{
+    font-weight: 600;
+    margin-top: .25rem;
+}
+
+
+img{
+    width: 5em;
+}
+
+button{
+   margin-top: auto;
+   width: 130px;
+   padding: .5rem .5rem;
+   margin-top: auto;
+   background: rgb(0, 92, 128);
+   color: #fff;
+   font-weight: 600;border: none;
+    height: 100%;
+}
+
+.fa-cart-shoppin{
+    font-size: .15rem;
+    margin-left: 15px;
+}
+
+button:hover{
+    cursor: pointer;
+    background: rgba(0, 92, 128, 0.45);
+}
+
+.para{
+    line-height: 25px;
+    margin-top: .35rem;
+    color: grey;
+}
+
+.card.fade-out {
+  opacity: 0;
+  pointer-events: none; /* Disable interaction during the fade-out */
+}
