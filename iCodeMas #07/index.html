@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/open-props"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="filter">
+        <h1>Filters</h1>
+
+        <div class="category"  id="category-filter">
+          <h2>Category</h2>
+          <div class="cat">
+            <input type="checkbox" name="cookies" id="cookies"> <div class="divs">Cookies</div>
+          </div>
+          <div class="cat">
+            <input type="checkbox" name="candies" id="candies"> <div class="divs">Candies</div>
+          </div>
+          <div class="cat">
+            <input type="checkbox" name="ornaments" id="ornaments"> <div class="divs">Ornaments</div>
+          </div>
+          <div class="cat">
+            <input type="checkbox" name="access" id="access"> <div class="divs">Accessories</div>
+          </div>
+        </div>
+
+        <div class="category color"  id="color-filter">
+          <h2>Colors</h2>
+          <div class="cat">
+            <input type="checkbox" name="red" id="red"> <div class="divs">Red</div>
+          </div>
+          <div class="cat">
+            <input type="checkbox" name="white" id="white"> <div class="divs">White</div>
+          </div>
+          <div class="cat">
+            <input type="checkbox" name="green" id="green"> <div class="divs">Green</div>
+          </div>
+          <div class="cat">
+            <input type="checkbox" name="brown" id="brown"> <div class="divs">Brown</div>
+          </div>
+        </div>
+
+        <div class="category size"  id="size-filter">
+          <h2>Size</h2>
+          <div class="cat">
+            <input type="checkbox" name="small" id="small"> <div class="divs">Small</div>
+          </div>
+          <div class="cat">
+            <input type="checkbox" name="medium" id="medium"> <div class="divs">Medium</div>
+          </div>
+          <div class="cat">
+            <input type="checkbox" name="large" id="large"> <div class="divs">Large</div>
+          </div>
+        
+        </div>
+    
+
+      </div>
+      
+      <div class="grid-container">
+        <div class="grid-item"  data-category="candies" data-color="brown" data-size="large"><img src="https://cdn-icons-png.flaticon.com/128/6279/6279303.png?ga=GA1.1.210895214.1702164917&semt=ais" alt="" srcset=""><div class="cartS"><h1 class="cart-heading">Add to cart</h1> <i class="fa-solid fa-cart-shopping"></i></div><span>$19.99</span></div>
+        <div class="grid-item"  data-category="" data-color="red" data-size="medium"><img src="https://cdn-icons-png.flaticon.com/128/9085/9085409.png?ga=GA1.1.210895214.1702164917&semt=ais" alt="" srcset=""><div class="sale">-25%</div><div class="cartS"><h1 class="cart-heading">Add to cart</h1> <i class="fa-solid fa-cart-shopping"></i></div><span>$12.99</span></div>
+        <div class="grid-item"  data-category="ornaments" data-color="green" data-size="small"><img src="https://cdn-icons-png.flaticon.com/128/275/275403.png?ga=GA1.1.210895214.1702164917&semt=ais" alt="" srcset=""><div class="cartS"><h1 class="cart-heading">Add to cart</h1> <i class="fa-solid fa-cart-shopping"></i></div><span>$15.99</span></div>
+        <div class="grid-item"  data-category="cookies" data-color="brown" data-size="small"> <img src="https://cdn-icons-png.flaticon.com/128/9084/9084751.png?ga=GA1.1.210895214.1702164917&semt=ais" alt="" srcset=""><div class="cartS"><h1 class="cart-heading">Add to cart</h1> <i class="fa-solid fa-cart-shopping"></i></div><span>$9.99</span></div>
+        <div class="grid-item"  data-category="access" data-color="green" data-size="large"> <img src="https://cdn-icons-png.flaticon.com/128/6273/6273063.png?ga=GA1.1.210895214.1702164917&semt=ais" alt=""><div class="cartS"><h1 class="cart-heading">Add to cart</h1> <i class="fa-solid fa-cart-shopping"></i></div><span>$9.99</span></div>
+        <div class="grid-item"  data-category="Ornaments" data-color="red" data-size="small"> <img src="https://cdn-icons-png.flaticon.com/128/6261/6261012.png?ga=GA1.1.210895214.1702164917&semt=ais" alt=""><div class="cartS"><h1 class="cart-heading">Add to cart</h1> <i class="fa-solid fa-cart-shopping"></i></div><span>$9.99</span></div>
+        <div class="grid-item"  data-category="access" data-color="brown" data-size="medium"><img src="https://cdn-icons-png.flaticon.com/128/1478/1478515.png?ga=GA1.1.210895214.1702164917&semt=ais" alt=""><div class="cartS"><h1 class="cart-heading">Add to cart</h1> <i class="fa-solid fa-cart-shopping"></i></div><span>$8.99</span></div>
+        <div class="grid-item"  data-category="candies" data-color="green" data-size="small"><img src="https://cdn-icons-png.flaticon.com/128/1349/1349005.png?ga=GA1.1.210895214.1702164917&semt=ais" alt=""><div class="cartS"><h1 class="cart-heading">Add to cart</h1> <i class="fa-solid fa-cart-shopping"></i></div><span>$19.99</span></div>
+        <div class="grid-item"  data-category="candies" data-color="green" data-size="small"><img src="https://cdn-icons-png.flaticon.com/128/9204/9204867.png?ga=GA1.1.210895214.1702164917&semt=ais" alt=""><div class="cartS"><h1 class="cart-heading">Add to cart</h1> <i class="fa-solid fa-cart-shopping"></i></div><span>$9.99</span></div>
+        <div class="grid-item"  data-category="ornaments" data-color="green" data-size="large"> <img src="https://cdn-icons-png.flaticon.com/128/122/122136.png?ga=GA1.1.210895214.1702164917&semt=ais" alt=""><div class="cartS"><h1 class="cart-heading">Add to cart</h1> <i class="fa-solid fa-cart-shopping"></i></div><span>$59.99</span></div>
+        <div class="grid-item"  data-category="access" data-color="white" data-size="large"><img src="https://cdn-icons-png.flaticon.com/128/3791/3791802.png?ga=GA1.1.210895214.1702164917&semt=ais" alt=""><div class="cartS"><h1 class="cart-heading">Add to cart</h1> <i class="fa-solid fa-cart-shopping"></i></div><span>$99.99</span></div>
+        <div class="new">NEW</div>
+        <!-- <div class="icon-cart">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
+            <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"/>
+            <span>0</span>
+          </svg>
+        </div> -->
+      </div>
+    </div>
+   
+   <script src="main.js"></script>
+  </body>
+</html>
+

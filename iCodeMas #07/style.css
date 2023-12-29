@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #d8d8d8;
+}
+
+
+.wrap{
+  display: flex;
+
+}
+
+h1{
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+h2{
+  font-size: 1rem;
+  
+}
+
+.cat{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.category{
+  width: 15em;
+  
+}
+
+.cat{
+  display: flex;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 25px;
+}
+
+@media (max-width: 1100px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 200px);
+  }
+}
+
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+@media (max-width: 700px) {
+  .grid-container {
+    grid-template-columns: 200px;
+  }
+}
+
+
+p{
+  margin-right: auto;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 0 0 2px black;
+  
+}
+
+.cartS {
+  font-size: .65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  gap: 5px;
+  background: var(--gradient-14);
+  color: var(--gray-9);
+  width: 100%;
+  opacity: 0; /* Initial opacity set to 0 */
+  transition: opacity 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+
+
+img{
+  width: 5em;
+  display: flex;
+  margin-top: 25%;
+}
+
+.grid-item {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  
+ 
+}
+
+.grid-item:nth-of-type(1){
+ position: relative;
+
+}
+
+.grid-item:nth-of-type(2){
+  position: relative;
+ 
+ }
+
+ .sale{
+  position: absolute;
+  color: #fff;
+  font-weight: 600;
+  background: rgb(128, 0, 0);
+  padding: .4rem;
+  top: 0;
+  left: 0;
+ }
+
+.new{
+  position: absolute;
+  color: #fff;
+  font-weight: 600;
+  background: green;
+  padding: .4rem;
+}
+
+span{
+  position: absolute;
+  float: right;
+  margin-left: 145px;
+  /* margin-top: 10px; */
+  background: #fff;
+  padding: 5px;
+  width: 43px;
+  text-align: center;
+  box-shadow: 0 0 2px black;
+  
+}
+
+/* .grid-item:hover{
+  cursor: pointer;
+  -webkit-animation: shadow-drop-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: shadow-drop-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+} */
+
+
+
+.fa-cart-shopping{
+  font-size: .65rem;
+  
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.01; /* Mid-section opacity at 0.5 */
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+@-webkit-keyframes shadow-drop-top {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-top {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
+
+/* Default styles for the checkbox */
+input[type="checkbox"] {
+  appearance: none; /* Remove default styles */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #8f8f8f;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Styles for the tick when the checkbox is checked */
+input[type="checkbox"]:checked::before {
+  content: '\2713'; /* Unicode character for a checkmark */
+  display: block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff; /* Change the color of the checkmark */
+  background-color: #4caf50; /* Change the background color when checked */
+  border-radius: 4px;
+}
+
+
+
+.hidden{
+  display: none;
+}
+
