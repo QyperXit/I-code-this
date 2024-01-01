@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: rgb(28, 124, 162);
+    font-family: sans-serif;
+}
+
+.face {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(128, 128, 128, 0.476);
+    transition: all 250ms;
+
+}
+
+.face:hover {
+    border: 1px solid #247394;
+    cursor: pointer;
+    box-shadow: 0 0 5px #247394;
+}
+
+.face:active {
+    border: 1px solid #79cdf1;
+}
+
+.active {
+    border: 2px solid #00f;
+    /* Add your desired styling for the active state */
+}
+
+span {
+    color: grey;
+    font-size: .85rem;
+    padding-block: 5px;
+}
+
+.faces {
+    display: flex;
+    gap: 1em;
+    margin-top: 1rem;
+}
+
+p {
+    margin-block: 1rem;
+}
+
+
+
+.container {
+    width: min(100% - 1rem, 35em);
+    margin-inline: auto;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    position: relative;
+}
+
+.close-icon {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 1rem;
+    transform: scale(1);
+    transition: all 250ms;
+
+}
+
+.close-icon:hover {
+    color: grey;
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+img {
+    position: absolute;
+    width: 10em;
+    top: 0;
+    translate: -350px -50px;
+    rotate: -30deg;
+}
+
+button {
+    width: 10em;
+    padding: .85rem;
+    border-radius: 25px;
+    background: #247394;
+    color: #ffffff;
+    margin-top: 1.5rem;
+    font-weight: 600;
+    border: none;
+    transition: all 250ms;
+
+}
+
+button:hover {
+    background: #389bc6;
+    cursor: pointer;
+
+}
+
+h2 {
+    margin-block: 1.5rem;
+    margin-right: auto;
+    margin-left: 2.65em;
+    font-size: 1rem;
+}
+
+/* i{
+  font-size: 5em;
+  width: 1em;
+  height: 1em;
+}
+   */
+iconify-icon {
+    font-size: 4em;
+}
+
+/* #textBoxWindow {
+  width: 300px;
+  max-width: 80vw;
+  max-height: 80vh;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  resize: both;
+  overflow: auto;
+} */
+
+
+#textBox {
+    width: 475px;
+    height: 90px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#textBox::placeholder {
+    padding-left: .5rem;
+    padding-top: .5rem;
+}
+
+.hidden {
+    display: none;
+}
