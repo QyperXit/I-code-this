@@ -46,7 +46,7 @@ body{
 
 .container::before{
   content: "x";
-  translate: 720px 30px;
+  translate: 750px 30px;
   font-weight: 600;
   cursor: pointer;
 }
