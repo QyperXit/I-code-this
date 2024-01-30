@@ -37,7 +37,7 @@ body {
 
     &::after {
       content: "🖉";
-      translate: 7px;
+      translate: 8px;
       position: absolute;
     }
   }
