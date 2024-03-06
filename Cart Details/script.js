@@ -4,7 +4,7 @@ let input = document.getElementById('num');
 let minus = document.querySelector('.fa-minus');
 let plus = document.querySelector('.fa-plus');
 
-let value = 2;
+let value = 3;
 
 input.value = value;
 
