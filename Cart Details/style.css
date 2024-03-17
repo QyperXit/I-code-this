@@ -7,7 +7,7 @@
 }
 
 .container{
-    background: #fff;
+    background: #ff8;
     width: min(100% - 2rem, 25em);
     padding: 2.5rem 2rem;
     display: flex;
