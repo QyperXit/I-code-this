@@ -9,7 +9,7 @@ import React from "react";
 import RadioGroupDemo from "./RadioGroupDemo";
 
 const toggleGroupItemClasses =
-  "hover:bg-violet3 color-mauve11 data-[state=on]:bg-violet6 data-[state=on]:text-violet12 flex h-[255px] w-[195px] items-center justify-center bg-white text-base leading-4 first:rounded-l last:rounded-r focus:z-10 focus:shadow-[0_0_0_2px] focus:shadow-black focus:outline-none";
+  "hover:bg-violet3 color-mauve11 data-[state=on]:bg-violet6 data-[state=on]:text-violet12 flex h-[255px] w-[200px] items-center justify-center bg-white text-base leading-4 first:rounded-l last:rounded-r focus:z-10 focus:shadow-[0_0_0_2px] focus:shadow-black focus:outline-none";
 
 const ToggleGroupDemo = () => (
   <ToggleGroup.Root
